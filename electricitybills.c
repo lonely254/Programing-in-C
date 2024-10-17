@@ -10,7 +10,7 @@ int main(int argc, char** argv)
 
 
 	int customer_id;
-	int customer_name;
+	char customer_name;
 	float units;
 	float charge_rate;
 	float bills;
@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 	scanf("%d",&customer_id);
 	//prompt the user to enter the customer_name
 	printf("enter the customer_name:");
-	scanf("%d",&customer_name);
+	scanf("%c",&customer_name);
 	//prompt the user to enter the units consumed
 	printf("enter the units consumed:");
 	scanf("%f",&units);
@@ -60,7 +60,7 @@ int main(int argc, char** argv)
 	total_amount=bills+surcharge_fee;
 	printf("\n the total_amount is:%.2f",total_amount);
 	printf("\n the customer_id is:%d",customer_id);
-	printf("\n the customer_name is:%f",customer_name);
+	printf("\n the customer_name is:%c",customer_name);
 	printf("\n the number of units:%.2f",units);
 	printf("the charge_rate is:%.2f",charge_rate);
 	printf("\n the total_amount is :%.2f",total_amount);
